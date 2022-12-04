@@ -5,14 +5,13 @@ export interface AboutInterface {}
 
 const About: React.FC<AboutInterface> = () => {
   return (
-    <motion.section
+    <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      id="about"
       className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-2xl">
+      <h3 className="absolute top-16 uppercase tracking-[20px] text-2xl">
         About
       </h3>
       <motion.img
@@ -24,7 +23,9 @@ const About: React.FC<AboutInterface> = () => {
         className="-mb-20 md:mb-20 flex-shrink h-56 w-56 rounded-full object-cover md:rounded-lg md:w-56 md:h-96 xl:w-[300px] xl:h-[500px] md:pt-20"
       />
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl">About me</h4>
+        <h4 className="text-4xl underline decoration-custom_blue-primary">
+          A little background
+        </h4>
         <p className="text-base">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos est sed
           dolor aliquid soluta aliquam alias amet blanditiis similique at
@@ -34,7 +35,7 @@ const About: React.FC<AboutInterface> = () => {
           voluptas tempora et?
         </p>
       </div>
-    </motion.section>
+    </motion.div>
   );
 };
 

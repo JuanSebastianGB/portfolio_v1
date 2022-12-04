@@ -13,13 +13,17 @@ function App() {
   return (
     <GlobalProvider>
       <Hamburger />
-      <div className="flex flex-row">
+      <div className="flex flex-row snap-y snap-mandatory">
         <Sidebar />
         <div className="w-full overflow-hidden">
           <Home />
-          <About />
+          <section id="about" className="snap-center">
+            <About />
+          </section>
           <Resume />
-          <Portfolio />
+          <section id="portfolio" className="snap-center">
+            <Portfolio />
+          </section>
         </div>
       </div>
 

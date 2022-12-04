@@ -26,7 +26,7 @@ const Home: React.FC<HomeInterface> = () => {
           <span className="text-2xl">Hi, I'm </span>
           <span className="text-2xl underline">
             {text}
-            <Cursor cursorColor="#173B6c" />
+            <Cursor cursorColor="#d8eb32" />
           </span>
         </section>
       </div>
