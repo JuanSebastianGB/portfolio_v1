@@ -9,7 +9,7 @@ const SocialIcons: React.FC<SocialIconsInterface> = () => {
     'https://www.linkedin.com/in/juansebastiangonzalezb/',
   ];
   return (
-    <div className="flex flex-row gap-2 justify-center p-4">
+    <div className="flex flex-col gap-2 justify-center p-4">
       {iconsSource.map((icn, index) => (
         <CustomSocialIcon url={icn} key={index} />
       ))}

@@ -31,33 +31,29 @@ const OptionMenu: React.FC<OptionMenuInterface> = ({ variant }) => {
   return (
     <a
       href={`#${variant}`}
-      className="pl-6 pb-7 flex flex-row items-center gap-2 text-custom_gray-primary hover:text-custom_white-primary"
+      className="pl-6 pb-7 flex flex-row items-center gap-2 text-[#a3a856]"
       onMouseEnter={() => handleEnter()}
       onMouseLeave={() => handleLeave()}
       onClick={() => handleClick()}
     >
       {variant === 'about' && (
         <>
-          <FaUser color={hover ? '#149ddd' : ''} size={20} />
-          About
+          <FaUser color={hover ? '#a3a700' : ''} size={20} />
         </>
       )}
       {variant === 'home' && (
         <>
-          <FaHouseUser color={hover ? '#149ddd' : ''} size={20} />
-          Home
+          <FaHouseUser color={hover ? '#a3a700' : ''} size={20} />
         </>
       )}
       {variant === 'contact' && (
         <>
-          <AiOutlineMail color={hover ? '#149ddd' : ''} size={20} />
-          Contact
+          <AiOutlineMail color={hover ? '#a3a700' : ''} size={20} />
         </>
       )}
       {variant === 'portfolio' && (
         <>
-          <GoServer color={hover ? '#149ddd' : ''} size={20} />
-          Projects
+          <GoServer color={hover ? '#a3a700' : ''} size={20} />
         </>
       )}
     </a>

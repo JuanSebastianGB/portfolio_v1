@@ -1,20 +1,15 @@
 import './App.css';
-import {
-  About,
-  Contact,
-  Hamburger,
-  Home,
-  Portfolio,
-  Sidebar,
-} from './components';
+import { About, Contact, Home, Portfolio } from './components';
+import { SectionIcons } from './components/SectionIcons';
 import { GlobalProvider } from './context/GlobalContext';
 
 function App() {
   return (
     <GlobalProvider>
-      <Hamburger />
-      <div className="flex flex-row snap-y snap-mandatory">
-        <Sidebar />
+      {/* <Hamburger /> */}
+
+      <div className="flex flex-row snap-y snap-mandatory relative">
+        <SectionIcons />
         <div className="w-full overflow-y-scroll overflow-x-hidden">
           <section id="home" className="snap-start">
             <Home />
@@ -30,10 +25,6 @@ function App() {
           </section>
         </div>
       </div>
-
-      {/* <Resume />
-      <Contact />
-      <Portfolio /> */}
     </GlobalProvider>
   );
 }
