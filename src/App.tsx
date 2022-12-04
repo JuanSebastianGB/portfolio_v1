@@ -1,6 +1,5 @@
 import './App.css';
-import { About, Contact, Home, Portfolio } from './components';
-import { SectionIcons } from './components/SectionIcons';
+import { About, Contact, Home, Portfolio, SectionIcons } from './components';
 import { GlobalProvider } from './context/GlobalContext';
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
           <section id="about" className="snap-center">
             <About />
           </section>
-          <section id="portfolio" className="snap-center">
+          <section id="portfolio" className="snap-start">
             <Portfolio />
           </section>
           <section id="contact" className="snap-start">

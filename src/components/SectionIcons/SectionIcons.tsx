@@ -12,7 +12,7 @@ const SectionIcons: React.FC<SectionIconsInterface> = () => {
       transition={{ duration: 2 }}
       className="fixed bg-custom_black-primary/0 text-custom_white-primary top-1 left-0 w-[95%] mx-auto z-40"
     >
-      <div className="flex flex-col h-screen w-[20%] justify-between">
+      <div className="flex w-full mt-[200px] justify-between">
         <div>
           <OptionMenu variant="home" />
           <OptionMenu variant="about" />

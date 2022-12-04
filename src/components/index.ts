@@ -10,5 +10,6 @@ export * from './Navbar';
 export * from './OptionMenu';
 export * from './Portfolio';
 export * from './Resume';
+export * from './SectionIcons';
 export * from './SidebarHeader';
 export * from './SocialIcons';
