@@ -21,7 +21,7 @@ const Contact: React.FC<ContactInterface> = () => {
       <h3 className="absolute text-2xl top-16 uppercase tracking-[20px]">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 md:flex-row items-center justify-center gap-2">
+      <div className="flex flex-col space-y-10 md:flex-row items-center justify-center gap-2 mt-[200px] md:mt-20 ">
         <motion.div
           initial={{ opacity: 0, x: -300 }}
           transition={{ duration: 2 }}
