@@ -14,13 +14,13 @@ const Home: React.FC<HomeInterface> = () => {
     delaySpeed: 2000,
   });
   return (
-    <div id="home" className="relative">
+    <div className="relative">
       <div className="opacity-90">
         <div className="min-h-screen bg-heroImage bg-fixed bg-no-repeat bg-cover bg-center"></div>
       </div>
       <div className="absolute top-0 left-0 flex flex-row h-full w-full justify-start items-center text-custom_white-primary ml-20">
         <section>
-          <h3 className=" text-6xl mb-6 break-words">
+          <h3 className=" text-6xl mb-6 w-[70vw] text-center">
             Juan Sebastian Gonzalez
           </h3>
           <span className="text-2xl">Hi, I'm </span>

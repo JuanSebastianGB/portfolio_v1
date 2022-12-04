@@ -34,7 +34,7 @@ const Portfolio: React.FC<PortfolioInterface> = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 2 }}
       id="portfolio"
-      className="h-screen relative flex flex-col md:flex-row overflow-hidden text-left max-w-full justify-evenly mx-auto items-center z-0"
+      className="min-h-screen relative flex flex-col md:flex-row overflow-hidden text-left max-w-full justify-evenly mx-auto items-center z-0"
     >
       <h3 className="absolute text-2xl top-16 uppercase tracking-[20px]">
         Projects
@@ -61,18 +61,18 @@ const Portfolio: React.FC<PortfolioInterface> = () => {
                   {project.title}
                 </span>
               </h4>
-              <p className="text-lg text-center md:text-left">
+              <p className="text-lg text-center md:text-left max-w-[70VW]">
                 {project.content}
               </p>
             </div>
             <div className="absolute top-[20%] right-[30%]">
-              <a
+              <motion.a
                 href={project.source}
                 target="_blank"
-                className="bg-custom_blue-primary text-custom_white-primary px-5 py-2 rounded-sm font-bold cursor-pointer hover:bg-custom_blue-primary/20 hover:border-2 hover:border-custom_black-primary hover:text-custom_black-primary"
+                className="bg-custom_blue-primary text-custom_white-primary px-5 py-2 rounded-sm font-bold cursor-pointer hover:bg-custom_blue-primary/20 hover:border-2 hover:border-custom_black-primary hover:text-custom_black-primary transition-all duration-700"
               >
                 Explore
-              </a>
+              </motion.a>
             </div>
           </div>
         ))}

@@ -7,9 +7,8 @@ const Menu: React.FC<MenuInterface> = () => {
     <section className="pt-7">
       <OptionMenu variant="home" />
       <OptionMenu variant="about" />
-      <OptionMenu variant="resume" />
-      <OptionMenu variant="contact" />
       <OptionMenu variant="portfolio" />
+      <OptionMenu variant="contact" />
     </section>
   );
 };

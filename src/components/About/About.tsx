@@ -31,8 +31,15 @@ const About: React.FC<AboutInterface> = () => {
         <h4 className="text-4xl underline decoration-custom_blue-primary">
           A little background
         </h4>
-        {paragraphs.map((paragraph) => (
-          <p>{paragraph}</p>
+        {paragraphs.map((paragraph, index) => (
+          <motion.p
+            key={index}
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+          >
+            {paragraph}
+          </motion.p>
         ))}
       </div>
     </motion.div>

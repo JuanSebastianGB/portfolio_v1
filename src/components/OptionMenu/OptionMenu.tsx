@@ -15,6 +15,19 @@ const OptionMenu: React.FC<OptionMenuInterface> = ({ variant }) => {
 
   const { globalContext, setGlobalContext } = useGlobalContext() as any;
   const handleClick = () => setGlobalContext({ open: false });
+  if (variant === 'resume')
+    return (
+      <a
+        className="pl-6 pb-7 flex flex-row items-center gap-2 text-custom_gray-primary hover:text-custom_white-primary cursor-pointer"
+        href="src/assets/cv.pdf"
+        target="_blank"
+      >
+        <>
+          <AiOutlineFileText color={hover ? '#149ddd' : ''} size={20} />
+          Resume
+        </>
+      </a>
+    );
   return (
     <a
       href={`#${variant}`}
@@ -45,12 +58,6 @@ const OptionMenu: React.FC<OptionMenuInterface> = ({ variant }) => {
         <>
           <GoServer color={hover ? '#149ddd' : ''} size={20} />
           Projects
-        </>
-      )}
-      {variant === 'resume' && (
-        <>
-          <AiOutlineFileText color={hover ? '#149ddd' : ''} size={20} />
-          Resume
         </>
       )}
     </a>
