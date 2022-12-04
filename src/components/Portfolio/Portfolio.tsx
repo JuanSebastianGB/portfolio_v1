@@ -41,8 +41,11 @@ const Portfolio: React.FC<PortfolioInterface> = () => {
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
-        {projects.map((project) => (
-          <div className="relative flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center p-20 md:p-44 h-screen">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="relative flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center p-20 md:p-44 h-screen"
+          >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +55,7 @@ const Portfolio: React.FC<PortfolioInterface> = () => {
               alt="project"
               className="w-96 h-auto object-cover rounded-sm"
             />
-            <div className="space-y-10 px:0 md:px-10 max-w-5xl">
+            <div className="space-y-10 px:0 md:px-10 max-w-[90%] md:max-w-5xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-custom_blue-primary">
                   {project.title}

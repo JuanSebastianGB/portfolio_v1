@@ -5,8 +5,8 @@ export interface HomeInterface {}
 const Home: React.FC<HomeInterface> = () => {
   const [text, count] = useTypewriter({
     words: [
-      'front developer',
-      'back developer',
+      'frontend developer',
+      'backend developer',
       'devops developer',
       'full stack Developer :P',
     ],
