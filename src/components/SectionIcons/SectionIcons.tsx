@@ -7,8 +7,8 @@ export interface SectionIconsInterface {}
 const SectionIcons: React.FC<SectionIconsInterface> = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -400 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -400 }}
+      whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 2 }}
       className="fixed bg-custom_black-primary/0 text-custom_white-primary top-1 left-0 w-[95%] mx-auto z-40"
     >

@@ -5,8 +5,6 @@ import { GlobalProvider } from './context/GlobalContext';
 function App() {
   return (
     <GlobalProvider>
-      {/* <Hamburger /> */}
-
       <div className="flex flex-row snap-y snap-mandatory relative">
         <SectionIcons />
         <div className="w-full overflow-y-scroll overflow-x-hidden">
