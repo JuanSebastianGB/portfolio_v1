@@ -1,17 +1,25 @@
 import ahorrapp from '@/assets/ahorrapp.png';
 import airbnb from '@/assets/airbnb.png';
 import ecommerce from '@/assets/ecommerce.png';
+import share from '@/assets/share.png';
 import { motion } from 'framer-motion';
 import React from 'react';
 export interface PortfolioInterface {}
 const Portfolio: React.FC<PortfolioInterface> = () => {
   const projects = [
     {
+      title: 'share-social-media',
+      url: share,
+      source: 'https://github.com/JuanSebastianGB/share-social-media',
+      content:
+        'Full-stack Social Media Website built with React, TypeScript, Nodejs, and Express. The website includes a Login/Registration system, user profile management, post-management, and comments. The frontend follows a clean architecture approach to ensure maintainability and extensibility. The backend includes services, validations, and other functionalities for smooth operation. The entire project is deployed on third-party services: Vercel hosts the frontend, Render.com hosts the backend, MongoDB Atlas hosts the database, and Cloudinary hosts the file storage system. The application connects to a MongoDB database to provide a smooth experience. Security features such as authentication, authorization, and encryption are implemented to ensure data security. The website is user-friendly, reliable, and provides a seamless user experience.',
+    },
+    {
       title: 'Ahorrapp',
       url: ahorrapp,
       source: 'https://github.com/SandraCalero/AhorrApp',
       content:
-        'full-stack api that implements python in backend using fastapi for swagger documentation and implements react in front-end, implemntingin google auth and backend auth to manage expenses',
+        'full-stack api that implements python in backend using fastapi for swagger documentation and implements react in front-end, implementing google auth and backend auth to manage expenses',
     },
     {
       title: 'AirBnB',
