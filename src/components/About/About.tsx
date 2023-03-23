@@ -5,9 +5,13 @@ export interface AboutInterface {}
 
 const About: React.FC<AboutInterface> = () => {
   const paragraphs = [
-    'Hello! My name is Juan Sebastián and I am a Colombian full-stack developer; I have a diverse set of skills, ranging from design with HTML + CSS +    Javascript I mainly use React as a javascript front-end library and node js as backend development, but I am comfortable using flask and    fast-API with python, and in general, different technologies such as   Flutter (dart), C, PHP, etc.',
-    'I am in love with the tech world and my biggest goal is to  learn as much as possible, developing high-quality code, optimizing process, and most  importantly, teach others what I know. The future is now and there are  too many things have to be done yet.',
-    "There are other fields of my interest, related to artificial intelligence and machine learning.I'm really excited to get to the point where I can bring together the knowledge I've gained throughout my professional life as an engineer and as a developer.",
+    `Greetings! My name is Juan Sebastián, and I'm a seasoned full-stack developer from Colombia with a focus on React and HTML, CSS, and Javascript. With over 2 years of practical experience in developing web applications, I possess a solid understanding of front-end technologies and am proficient in back-end development using both JavaScript and Python. Furthermore, I have extensive experience working with both relational and non-relational databases and am skilled in consuming data through APIs. I'm well-versed in using Github and have experience with CI/CD approaches.
+
+    Before diving into software development, I worked as a biomedical engineer for over 4 years. This experience has taught me critical thinking and attention to detail, which I apply to my work as a developer. I take pride in creating clean, efficient, and user-friendly applications that meet the needs of clients and end-users.
+
+    Apart from React, I'm also interested in the fields of artificial intelligence and machine learning. My long-term goal is to bring together my engineering and development knowledge to develop solutions that benefit society.
+
+    I'm always eager to learn and grow, and I take every opportunity to enhance my skills. I'm excited about the future of tech, and I'm committed to developing high-quality code, optimizing processes, `,
   ];
   return (
     <motion.div
